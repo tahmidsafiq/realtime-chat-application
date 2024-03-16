@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 @mixin mobile {
@@ -119,7 +120,7 @@ body{
       background-color: transparent;
       font-size: 24px;
       border: none;
-      color: #fff;
+      color: #defffa;
       cursor: pointer;
       border: 2px solid transparent;
       border-radius: 20px;
@@ -149,6 +150,7 @@ body{
   .sidebar{
     background-color: rgb(233, 255, 255);
     flex: 1;
+    border-right: 1px solid rgba(25, 12, 75, 0.2);
     @include tablet{
       position: relative;
     }
@@ -159,7 +161,7 @@ body{
       background-color: transparent;
       height: 50px;
       margin-top: 10px;
-      padding: 20px 30px;
+      padding: 20px 20px;
       justify-content: space-between;
       color: #272727;
 
@@ -195,18 +197,14 @@ body{
         background-color: transparent;
       font-size: 24px;
       border: none;
-      color: #fff;
+      color: #a9b1f8;
       cursor: pointer;
       border: 2px solid transparent;
       border-radius: 20px;
-      padding: 8px 16px;
       transition: 0.5s;
 
       &:hover{
-        border: 2px solid crimson;
-        padding: 8px 16px;
-        color: #000;
-        border-radius: 20px;
+        color: crimson;
       }
         @include tablet{
           position: absolute;
@@ -224,10 +222,11 @@ body{
 
       input{
         background-color: #9affe7;
-        border: none;
+        border: 2px solid rgba(0, 0, 0, 0.05);
         outline: none;
         color: #000;
         width: 85%;
+        font-size: 18px;
         padding: 20px 30px;
         border-radius: 50px;
 
@@ -249,9 +248,12 @@ body{
       color: rgb(23, 23, 23);
       cursor: pointer;
       transition: 0.5s;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50px 0 50px 0;
+      border-bottom: 3px solid rgba(178, 74, 74, 0.15);
       &:hover{
         background-color: #9affe7;
+        border-radius: 50px 0 50px 0;
+        border-bottom: 3px solid rgba(178, 74, 74, 0.15);
       }
 
       .userImg{
@@ -288,7 +290,7 @@ body{
 
     .chatInfo{
       height: 50px;
-      background-color: #190c4b;
+      background-color: rgb(25, 12, 75);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -351,7 +353,7 @@ body{
       }
 
       .messageContent{
-        max-width: 60%;
+        max-width: 70%;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -360,7 +362,7 @@ body{
           background-color: rgb(221, 221, 221);
           padding: 10px 20px;
           font-size: 20px;
-          border-radius: 0 10px 10px 10px;
+          border-radius: 0 20px 20px 20px;
           max-width: max-content;
         }
         img{
@@ -379,7 +381,7 @@ body{
             background-color: crimson;
             color: white;
             font-size: 20px;
-            border-radius: 10px 0px 10px 10px;
+            border-radius: 20px 0px 20px 20px;
           }
         }
       }
