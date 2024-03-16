@@ -4,7 +4,7 @@ import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBzi5zwrVa3xYV8ORSuIRbS9hqWDxwKLBk',
+  apiKey: import.meta.env.VITE_REACT_APP_API_KEY, 
   authDomain: 'chat-aplication-abb90.firebaseapp.com',
   projectId: 'chat-aplication-abb90',
   storageBucket: 'chat-aplication-abb90.appspot.com',
