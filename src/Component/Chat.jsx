@@ -54,7 +54,7 @@ const Chat = () => {
           <span>{data.user?.displayName}</span>
         </div>
         <div className="chatIcons">
-        <Link target='_blank' to="/join-meetting" className="fixed-btn">
+        <Link  to="/join-meetting" className="fixed-btn">
     Create a Meeting
   </Link>
           <Link to="/join-meetting" ><img src={Cam} alt="Camera Icon" /></Link>
