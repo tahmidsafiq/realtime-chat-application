@@ -1,0 +1,74 @@
+@media (max-width: 480px) {
+  .home {
+    position: relative;
+    height: 100vh; /* Make sure the home container takes the full height of the viewport */
+  
+    .chat {
+      flex: none !important;
+      width: 100% !important;
+    }
+  
+    .sidebar {
+      position: absolute;
+      top: 0; /* Position at the top, or adjust as needed */
+      width: 100% !important;
+      height: 100vh; /* Set a fixed height to allow scrolling */
+      z-index: 18;
+      overflow-y: auto !important; /* Use overflow-y to scroll vertically */
+    }
+
+
+    .sidebar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      transition: z-index 0.3s;
+    }
+    
+    .rightchatbox {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+    }
+    
+
+    .mobile-input {
+      width: 74% !important;
+
+  }
+
+  .mobile-input input{
+    height: 50px;
+  }
+
+  .mobile-input .send {
+    height: 50px;
+  }
+
+  }
+
+  .fixed-btn {
+    top: 0;
+    right: 0px;
+    padding: 5px 5px;
+}
+
+.navbar button {
+    display: none;
+}button {
+  position: absolute;
+  top: 0;
+  left: 90px;
+}
+
+  
+}
+
+@media (min-width: 481px) {
+  .button-container{
+    display: none;
+  }
+}

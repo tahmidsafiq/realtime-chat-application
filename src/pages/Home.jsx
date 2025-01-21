@@ -6,9 +6,13 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='container'>
-      <Sidebar/>
-      <Chat/>
+      <Sidebar className='sidebar' id="activeindex"/>
+      <Chat className="rightchatbox" id="activeindex"/>
       </div>
+      {location.pathname === '/' && (
+        <div className='botpress-container  botpress-show'>
+        </div>
+      )}
     </div>
   )
 }

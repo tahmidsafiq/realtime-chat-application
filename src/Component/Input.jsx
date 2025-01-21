@@ -79,7 +79,7 @@ const Input = () => {
     setImg(null);
   };
   return (
-    <div className="input">
+    <div className="input mobile-input">
       <input
         type="text"
         placeholder="Type something..."
@@ -94,7 +94,11 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <img src={Img} alt="" />
+        <img
+        src={Img || '/src/assets/images/Img.svg'}
+        alt="Uploaded"
+      />
+
         </label>
         <button onClick={handleSend} >Send</button>
       </div>
